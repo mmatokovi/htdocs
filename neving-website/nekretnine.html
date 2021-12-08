@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <title>Nekretnine | NEVING</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="tButton" title="Go to top">&#x25B2;</button>
+    <nav>
+        <div class="navigacija">
+            <a href="index.html" id="logo" style="float: left;">NEVING |</a>
+            <div class="meni">
+                <a href="kontakt.html">KONTAKT</a>
+                <a class="tab" href="nekretnine.html">NEKRETNINE</a>
+                <a href="djelatnosti.html">DJELATNOSTI</a>
+                <div class="dropdown">
+                <button class="dropbtn">REFERENCE</button>
+                    <div class="dropdown-content">
+                        <a href="Gračani">Gračani</a>
+                        <a href="Gračani">Gračani</a>
+                        <a href="Gračani">Remete</a>
+                    </div>
+                </div> 
+                <a href="tvrtka.html">TVRTKA</a>
+                <a href="index.html">POČETNA</a>
+            </div>
+            <a class="rButton" style="float:right" href="#">
+                <span class="hamburger">
+                    <span class="ham"></span>
+                    <span class="ham"></span>
+                    <span class="ham"></span>
+                </span>
+            </a>
+            <aside>
+                <div class="izbornik">
+                <ul>
+                    <li><a href="index.html">POČETNA</a></li>
+                    <li><a href="tvrtka.html">TVRTKA</a></li>
+                    <li><a href="" class="eButton">REFERENCE</a>
+                        <ul class="izbornik-traka">
+                            <li><a href="index.html">POČETNA</a></li>
+                            <li><a href="tvrtka.html">TVRTKA</a></li>
+                            <li><a href="reference.html">REFERENCE</a>
+                        </ul>
+                    </li>
+                    <li><a href="djelatnosti.html">DJELATNOSTI</a></li>
+                    <li><a href="nekretnine.html">NEKRETNINE</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+                </div>
+            </aside>
+        </div>
+    </nav>
+    <div class="sadrzaj">
+        <section style="padding-top:90px;">
+            <div class="head">
+            <p class="naslov_slike">NEKRETNINE</p>
+            <img src="img/photo-1485083269755-a7b559a4fe5e.webp" width="100%" height="450">
+            </div>
+        </section>
+        <section>
+            <div class="table">
+                <div class="text-box">
+                    <br>
+                    <h3 class="title">NEKRETNINE</h3>
+                    <br>
+                    <p>Ako tražite novi dom, obratite nam se s povjerenjem jer je svaki naš projekt potpuno prilagođen potrebama života u 21. stoljeću. To prije svega znači da, osim pouzdanosti, kvaliteti izvedbe i opremanju prostora, maksimalnu pozornost posvećujemo i izboru mikro-lokacije. To podrazumijeva blizinu svih potrebnih institucija poput škola, domova zdravlja, rekreativnih i zabavnih sadržaja, ali isto tako i snažan doticaj s prirodom.</p>
+                    <br>
+                    <h3>Prodaja stanova:</h3>
+                    <div class="kontaktinfo">
+                        <p>Email: <a href="mailto:neving_doo@yahoo.com">neving_doo@yahoo.com</a><br></p>
+                        <p>Tel: <a href="callto:+38514580855">+385 1 4580-855</a></p>
+                    </div>
+                    <hr>
+                    <a href="kontakt.html" class="button_back" style="float: right;">Na kontakt</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="naslov crtica">NEKRETNINE</h2>
+            <div class="table">
+                <div class="nekretnine">
+                    <img id="myImg" class="myimgs" onclick="myFunc(this)" src="img/img_lights.jpg" alt="Northern Lights, Norway" title="Northern Lights, Norway" width="300" height="200">
+                    <img id="myImg" class="myimgs" onclick="myFunc(this)" src="img/img_lights.jpg" alt="Northern Lights, Norway" title="Northern Lights, Norway" width="300" height="200">
+                    <img id="myImg" class="myimgs" onclick="myFunc(this)" src="img/img_lights.jpg" alt="Northern Lights, Norway" title="Northern Lights, Norway" width="300" height="200">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="table tamno-plava-bg b_bijela">
+                <div class="kanta">
+                    <h2 class="naslov big"><span class="b_crevena">30 godina</span> izvrsnosti</h2><br>
+                    <p class="text bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
+                    <div class="brojevi">
+                        <span class="broj" data-number="30" data-decimal="0">30</span>
+                        <span class="broj_text">godina djelovanja</span>
+                    </div>
+                    <div class="brojevi">
+                        <span class="broj" data-number="50" data-decimal="0">50</span>
+                        <span class="broj_text">Odrađena projekta</span>
+                    </div>
+                    <div class="brojevi">
+                        <span class="broj" id="zaposlenici" data-number="15" data-decimal="0">15</span>
+                        <span class="broj_text">Zadovoljnih klijenata</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="table">
+                <div class="col">
+                    <h3>NEVING d.o.o.</h3>
+                    <address>
+                        Radićeva 3,<br>
+                        HR-10000 Zagreb<br>
+                        OIB: 70989676533
+                    </address>
+                </div>
+                <div class="col">
+                    <h3>Kontakt:</h3>
+                    <address>
+                        <a href="mailto:neving_doo@yahoo.com">neving_doo@yahoo.com</a><br>
+                        <a href="callto:+38514580855">+385 1 4580-855</a>
+                    </address>
+                </div>
+                <div class="col">
+                    <h3>Prava:</h3>
+                    <address>
+                     © 2021. Neving d.o.o.<br>
+                    </address>
+                </div>
+                <div class="footer_bottom">
+                    <a href="index.html">POČETNA</a>
+                    <a href="tvrtka.html">TVRTKA</a>
+                    <a href="djelatnosti.html">DJELATNOSTI</a>
+                    <a href="nekretnine.html">NEKRETNINE</a>
+                    <a href="kontakt.html">KONTAKT</a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="img/icon_linkedin_retina.png" style="width: 83px; height: 23px; float: right;"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="config.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
