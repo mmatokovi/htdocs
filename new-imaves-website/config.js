@@ -1,7 +1,6 @@
-var eButton = document.querySelector('.eButton');
-eButton.onclick = function(e) {
+$( ".eButton" ).click(function(e) {
   e.preventDefault(), $(this).next("ul").slideToggle(), $(this).toggleClass("expanded")
-}
+});
 
 var rButton = document.querySelector('.rButton');
 rButton.onclick = function(e) {
@@ -39,25 +38,5 @@ $(".dropbtn").on('click mouseover',function() {
 $("html").on('click mouseout',function() {
     if ($(event.target).closest('.dropbtn, .dropdown-content').length === 0) {
         $(".dropdown-content").css("display","none");
-    }
-});
-
-var stop = $("#brojilo").offset().top;
-$(window).scroll(function() {
-    if ($(window).scrollTop() > stop ) {
-        $(window).off("scroll");
-        $('.broj').each(function () {
-            var $this = $(this);
-            $({ Counter: $this.attr("data-decimal") }).animate({ Counter: $this.attr("data-number") }, {
-                duration: 4000,
-                easing: 'swing',
-                step: function () {
-                    $this.text(Math.ceil(this.Counter));
-                },
-                complete: function() {
-                    $this.text(this.countNum);
-                }
-            });
-        });
     }
 });
